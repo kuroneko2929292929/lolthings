@@ -1,0 +1,19 @@
+<?php
+// Execute the command
+exec("pkill -9 php", $output, $return_var);
+
+// Check if the command executed successfully
+if ($return_var === 0) {
+    echo "Command executed successfully.";
+} else {
+    echo "Command execution failed.";
+}
+
+// Output any additional information returned by the command
+if (!empty($output)) {
+    echo "\nAdditional output:\n";
+    foreach ($output as $line) {
+        echo $line . "\n";
+    }
+}
+?>
