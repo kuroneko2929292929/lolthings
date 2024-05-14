@@ -27,4 +27,5 @@
 <a href="http://103.165.243.103/ads/slotplus/">http://103.165.243.103/ads/slotplus/</a>
 <a href="https://elaporbencana.kalbarprov.go.id/fonts/vendor/-/garansi-slot/">https://elaporbencana.kalbarprov.go.id/fonts/vendor/-/garansi-slot/</a>
 <a href="https://e-absensi.wonogirikab.go.id/web/asset/pulsa/">https://e-absensi.wonogirikab.go.id/web/asset/pulsa/</a>
+<a href="https://sitara.polines.ac.id/asset/spaceman/">https://sitara.polines.ac.id/asset/spaceman/</a>
 </div> 
